@@ -24,7 +24,7 @@ from ex9 import get_valid_positional_args
 # print(validate_dict({("key1", "", "inside", ""), ("key2", "start", "middle", "winter")}, {"key1": "come inside, it's too cold out", "key3": "this is not valid"}))
 
 # ex6
-# print(get_unique_not_unique(['1', '1', '1', '1', '2']))
+# print(get_unique_not_unique([1, 1, 1, 2, 3, 2, 1]))
 
 # ex7
 # print(get_relations({1, 2}, {2, 3}))
