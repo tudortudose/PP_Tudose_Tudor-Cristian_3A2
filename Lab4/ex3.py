@@ -3,7 +3,7 @@ import os.path
 
 def get_last_lines_or_dir_files(path):
     if not (os.path.exists(path)):
-        raise Exception("path does not exist")
+        raise Exception("Path does not exist!")
     if os.path.isfile(path):
         return solve_file(path)
     elif os.path.isdir(path):
@@ -11,9 +11,9 @@ def get_last_lines_or_dir_files(path):
 
 
 def solve_file(path):
-    with open(path, 'r') as f:
-        string = f.read()
-        string = string[-20:]
+    with open(path, 'rb') as f:
+        f.seek(-20, 2)
+        string = f.read().decode('utf-8')
         return string
 
 
@@ -28,5 +28,4 @@ def solve_dir(path):
             dictionary[get_file_extension(file)] = dictionary.setdefault(get_file_extension(file), 0) + 1
     my_list = list(dictionary.items())
     my_list.sort(key=lambda el: el[1])
-
     return my_list
