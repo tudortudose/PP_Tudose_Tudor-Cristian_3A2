@@ -8,25 +8,25 @@ from ex7 import get_file_info
 from ex8 import get_full_path_files
 
 # ex1
-# print(get_file_extensions("ex1_dir"))
+# print(get_file_extensions("dir1"))
 
 # ex2
-# write_file_paths("ex2_dir", "ex2_dir/result.txt")
+# write_file_paths("dir2", "dir2/result.txt")
 
 # ex3
-# print(get_last_lines_or_dir_files("ex3_dir/dir3"))
+# print(get_last_lines_or_dir_files("dir3/dir1"))
 
 # ex4
-# print(get_non_empty_file_extensions("ex1_dir"))
+# print(get_non_empty_file_extensions("dir1"))
 
 # ex5
-# print(search_in_target("ex5_dir", "hello"))
+# print(search_in_target("dir4", "hello"))
 
 # ex6
 # search_in_target_w_callback("ex5_direct", "hello", lambda e: print("Err: " + str(e)))
 
 # ex7
-# print(get_file_info("ex5_dir/file1.txt"))
+# print(get_file_info("dir4/file1.txt"))
 
 # ex8
-# print(get_full_path_files("C:\\Users\\tudor\\OneDrive\\Desktop\\Facultate\\Anul_3\\PP\\PP_Tudose_Tudor-Cristian_3A2\\Lab4\\ex5_dir"))
+# print(get_full_path_files("C:\\Users\\tudor\\OneDrive\\Desktop\\Facultate\\Anul_3\\PP\\PP_Tudose_Tudor-Cristian_3A2\\Lab4\\dir4"))
