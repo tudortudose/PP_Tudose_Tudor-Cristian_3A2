@@ -5,7 +5,7 @@ def censor_text(text):
     words = re.findall(r"[a-zA-Z]+", text)
     matches = []
     for word in words:
-        if re.match(r'[aeiou]+[a-zA-Z]*[aeiou]+$', word):
+        if re.match(r'[aeiouAEIOU]+[a-zA-Z]*[aeiouAEIOU]+$', word):
             matches += [word]
 
     for match in matches:
