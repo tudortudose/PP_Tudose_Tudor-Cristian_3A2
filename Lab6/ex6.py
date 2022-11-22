@@ -3,12 +3,10 @@ import re
 
 def censor_text(text):
     words = re.findall(r"[a-zA-Z]+", text)
-    print(words)
     matches = []
     for word in words:
         if re.match(r'[aeiou]+[a-zA-Z]*[aeiou]+$', word):
             matches += [word]
-            print(word)
 
     for match in matches:
         replace_string = match
